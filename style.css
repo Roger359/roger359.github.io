@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Rubik:wght@300;400;500;600;800&family=Work+Sans:wght@100;300;400;600;800&display=swap');
+
+:root{
+  --white: #fff;
+  --myLinux-black: #2b2b2b;
+  --black: #1e2326;
+  --color-primary: #03875B;
+  --grey: #97a5ce;
+  --light-grey: #dce1f2;
+  --dark-grey: #222831;
+
+}
+
+*{
+  box-sizing: border-box;
+  font-family: "Work Sans";
+  margin: 0;
+  padding: 0;
+}
+
+html{
+  /* allows me to scroll when click menu links */
+  scroll-behavior: smooth;
+}
+
+/* Menu */
+
+.logo{
+  width: 25%;
+}
+
+.header-container{
+  background-color: var(--black);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 99;
+
+}
+
+.header-container header{
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+
+}
+
+.header-container header ul{
+  display: flex;
+  list-style: none;
+
+}
+.header-container header nav ul li a{
+  text-align: none;
+  color: var(--white);
+  margin: 0 15px;
+  padding: 3px;
+  transition: .5s;
+  text-decoration: none;
+}
+
+.header-container header nav ul li a:hover{
+  color: var(--color-primary);
+}
+
+.nav-responsive{
+  background-color: var(--color-primary);
+  color: var(--white);
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: none;
+}
