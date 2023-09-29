@@ -1,86 +1,92 @@
 @import url("https://fonts.googleapis.com/css2?family=Righteous&family=Rubik:wght@300;400;500;600;800&family=Work+Sans:wght@100;300;400;600;800&display=swap");
 
 :root {
-	--white: #fff;
-	--myLinux-black: #2b2b2b;
-	--black: #1e2326;
-	--color-primary: #03875b;
-	--grey: #97a5ce;
-	--light-grey: #dce1f2;
-	--dark-grey: #222831;
+  --white: #fff;
+  --myLinux-black: #2b2b2b;
+  --black: #1e2326;
+  --color-primary: #03875b;
+  --grey: #97a5ce;
+  --light-grey: #dce1f2;
+  --dark-grey: #222831;
 }
 
 * {
-	box-sizing: border-box;
-	font-family: "Work Sans";
-	margin: 0;
-	padding: 0;
+  box-sizing: border-box;
+  font-family: "Work Sans";
+  margin: 0;
+  padding: 0;
 }
 
 html {
-	/* allows me to scroll when click menu links */
-	scroll-behavior: smooth;
+  /* allows me to scroll when click menu links */
+  scroll-behavior: smooth;
 }
 
 /* Menu */
 
-.logo {
-	width: 25%;
-}
+/* .logo {
+
+} */
 
 .header-container {
-	background-color: var(--black);
-	position: fixed;
-	width: 100%;
-	top: 0;
-	left: 0;
-	z-index: 99;
+  background-color: var(--black);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 99;
 }
 
 .header-container header {
-	max-width: 1100px;
-	margin: auto;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	padding: 15px 20px;
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+}
+
+.header-container header .logo a {
+  font-family: "Righteous";
+  font-size: 36px;
+  color: var(--color-primary);
+  text-decoration: none;
 }
 
 .header-container header ul {
-	display: flex;
-	list-style: none;
+  display: flex;
+  list-style: none;
 }
+
 .header-container header nav ul li a {
-	text-align: none;
-	color: var(--white);
-	margin: 0 15px;
-	padding: 3px;
-	transition: 0.5s;
-	text-decoration: none;
+  text-align: none;
+  color: var(--white);
+  margin: 0 15px;
+  padding: 3px;
+  transition: 0.5s;
+  text-decoration: none;
 }
 
 .header-container header nav ul li a:hover {
-	color: var(--color-primary);
+  color: var(--color-primary);
 }
 
 .nav-responsive {
-	background-color: var(--color-primary);
-	color: var(--white);
-	padding: 5px 10px;
-	border-radius: 5px;
-	cursor: pointer;
-	display: none;
+  background-color: var(--color-primary);
+  color: var(--white);
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: none;
 }
 
 /* Start Section */
 
 .start {
-	background: linear-gradient(
-			to top,
-			rgba(30, 35, 38, 0.8),
-			rgba(30, 35, 38, 1)
-		),
-		url(img/fondo.jpg);
+  background: linear-gradient(to top,
+      rgba(30, 35, 38, 0.8),
+      rgba(30, 35, 38, 1)),
+    url(img/fondo.jpg);
   background-size: cover;
   height: 100vh;
   color: var(--white);
@@ -88,7 +94,7 @@ html {
   align-items: center;
 }
 
-.start .banner-container{
+.start .banner-container {
   padding: 20px;
   background-color: var(--black);
   max-width: 350px;
@@ -97,7 +103,7 @@ html {
   border-radius: 40px;
 }
 
-.start .banner-container img{
+.start .banner-container img {
   margin-top: 40px;
   border: 10px solid var(--color-primary);
   display: block;
@@ -106,19 +112,19 @@ html {
   border-radius: 100%;
 }
 
-.start .banner-container h1{
+.start .banner-container h1 {
   margin-top: 40px;
   font-size: 42px;
   font-family: "Righteous";
 }
 
-.start .banner-container h2{
+.start .banner-container h2 {
   font-size: 15px;
   font-weight: normal;
-
+  margin: 8px;
 }
 
-.start .banner-container .social-media a{
+.start .banner-container .social-media a {
   color: var(--white);
   display: inline-block;
   text-decoration: none;
@@ -129,9 +135,132 @@ html {
   line-height: 42px;
   margin: 40px 5px;
   font-size: 20px;
-  transition: .3s;
+  transition: 0.3s;
 }
 
-.start .banner-container .social-media a:hover{
+.start .banner-container .social-media a:hover {
   background-color: var(--color-primary);
+}
+
+/* About */
+.about {
+  background-color: var(--black);
+  color: var(--white);
+  padding: 50px 20px;
+}
+
+.about .about-container {
+  max-width: 1100px;
+  margin: auto;
+}
+
+.about h2 {
+  font-size: 48px;
+  font-family: "Righteous";
+  text-align: center;
+  padding: 20px 0;
+}
+
+.about .about-container p {
+  font: 18px;
+  line-height: 22px;
+  margin-bottom: 20px;
+}
+
+.about .about-container p span {
+  color: var(--color-primary);
+  font-weight: bold;
+}
+
+.about .row {
+  display: flex;
+}
+
+.about .row .col {
+  width: 50%;
+}
+
+.about .row .col h3 {
+  font-size: 28px;
+  font-family: "Righteous";
+  margin-bottom: 25px;
+}
+
+.about .row .col ul {
+  list-style: none;
+}
+
+.about .row .col ul li {
+  margin: 12px 0;
+}
+
+.about .row .col ul li strong{
+  display: inline-block;
+  color: var(--color-primary);
+  width: 130px;
+}
+
+.about .row .col ul li span{
+  background-color: var(--color-primary);
+  padding: 3px;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.about .row .col .hobbies-container{
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+.about .row .col .hobbies-container .hobbies{
+  width: 100px;
+  height: 100px;
+  background-color: #252a2e;
+  border-radius: 10px;
+  margin: 0 15px 15px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+transition: .3s;
+}
+
+.about .row .col .hobbies-container .hobbies:hover{
+  background-color: var(--color-primary);
+}
+
+.about .row .col .hobbies-container .hobbies i{
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+.about button{
+  cursor: pointer;
+  background-color: transparent;
+  border: 2px solid var(--white);
+  width: fit-content;
+  display: block;
+  margin: 40px auto;
+  padding: 10px 22px;
+  font-size: 16px;
+  color: var(--white);
+  position: relative;
+  z-index: 10;
+
+}
+
+.about button .overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: var(--color-primary);
+  z-index: -1;
+  transition: 1s;
+}
+
+.about button:hover .overlay{
+  width: 100%;
+
 }
