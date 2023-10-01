@@ -28,6 +28,15 @@ html {
   font-weight: bold;
 }
 
+section{
+  height: 100vh;
+
+}
+
+section h2{
+  margin-top: 40px;
+}
+
 /* Menu */
 
 
