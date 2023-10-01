@@ -22,11 +22,15 @@ html {
   scroll-behavior: smooth;
 }
 
+.web {
+  text-decoration: none;
+  color: var(--grey);
+  font-weight: bold;
+}
+
 /* Menu */
 
-/* .logo {
 
-} */
 
 .header-container {
   background-color: var(--black);
@@ -191,29 +195,29 @@ html {
 }
 
 .about .row .col ul li {
-  margin: 12px 0;
+  margin: 25px 0;
 }
 
-.about .row .col ul li strong{
+.about .row .col ul li strong {
   display: inline-block;
   color: var(--color-primary);
   width: 130px;
 }
 
-.about .row .col ul li span{
+.about .row .col ul li span {
   background-color: var(--color-primary);
   padding: 3px;
   font-weight: bold;
   border-radius: 5px;
 }
 
-.about .row .col .hobbies-container{
+.about .row .col .hobbies-container {
   display: flex;
   flex-wrap: wrap;
 
 }
 
-.about .row .col .hobbies-container .hobbies{
+.about .row .col .hobbies-container .hobbies {
   width: 100px;
   height: 100px;
   background-color: #252a2e;
@@ -223,18 +227,19 @@ html {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-transition: .3s;
+  transition: .3s;
 }
 
-.about .row .col .hobbies-container .hobbies:hover{
+.about .row .col .hobbies-container .hobbies:hover {
   background-color: var(--color-primary);
 }
 
-.about .row .col .hobbies-container .hobbies i{
+.about .row .col .hobbies-container .hobbies i {
   font-size: 30px;
   margin-bottom: 10px;
 }
-.about button{
+
+.about button {
   cursor: pointer;
   background-color: transparent;
   border: 2px solid var(--white);
@@ -249,7 +254,7 @@ transition: .3s;
 
 }
 
-.about button .overlay{
+.about button .overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -260,7 +265,208 @@ transition: .3s;
   transition: 1s;
 }
 
-.about button:hover .overlay{
+.about button:hover .overlay {
   width: 100%;
+
+}
+
+/* Skills Section  */
+
+.skills {
+  background-color: #252a2e;
+  color: var(--white);
+  padding: 50px 20px;
+}
+
+.skills .skills-container {
+  max-width: 1100px;
+  margin: auto;
+}
+
+.skills h2 {
+  font-size: 48px;
+  font-family: "Righteous";
+  text-align: center;
+  padding: 20px 0;
+}
+
+.skills .row {
+  display: flex;
+}
+
+/* technical skills column */
+.skills .row .col .skill-container {
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+.skills .row .col .skill-container .skill {
+  width: 100px;
+  height: 100px;
+  background-color: #252a2e;
+  border-radius: 10px;
+  margin: 0 15px 15px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: .3s;
+}
+
+
+.skills .row .col .skill-container .skill:hover {
+  background-color: var(--color-primary);
+}
+
+.skills .row .col .skill-container .skill i {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.skills .skill-container .skill>span {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.skills .row .col {
+  width: 50%;
+  padding: 0 20px;
+}
+
+.skills .row .col h3 {
+  font-size: 28px;
+  font-family: "Righteous";
+  margin-bottom: 25px;
+}
+
+.skills .skill>span {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 10px;
+
+}
+
+
+
+.skills .skill .skill-bar {
+  height: 8px;
+  width: 80%;
+  background-color: #131517;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.skills .skill .progress {
+  background-color: var(--color-primary);
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 8px;
+  /* width: 100%; */
+}
+
+.skills .skill .skill-bar span {
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  background-color: var(--color-primary);
+  border-radius: 50px;
+  line-height: 40px;
+  text-align: center;
+  top: -17px;
+  right: -15px;
+  font-size: 14px;
+
+}
+
+/* add the progress classes with javascript */
+.skills .skill .javascript {
+  width: 0%;
+  animation: 2s javascript forwards;
+}
+
+
+
+.skills .skill .vscode {
+  width: 0%;
+  animation: 2s vscode forwards;
+}
+
+@keyframes vscode {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 75%;
+  }
+
+}
+
+
+.skills .skill .scrum {
+  width: 0%;
+  animation: 2s scrum forwards;
+}
+
+@keyframes scrum {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 75%;
+  }
+
+}
+
+.skills .skill .git {
+  width: 0%;
+  animation: 2s git forwards;
+}
+
+@keyframes git {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 65%;
+  }
+
+}
+
+.skills .skill .notion {
+  width: 0%;
+  animation: 2s notion forwards;
+}
+
+@keyframes notion {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 85%;
+  }
+
+}
+
+.skills .skill .miro {
+  width: 0%;
+  animation: 2s miro forwards;
+}
+
+@keyframes miro {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 55%;
+  }
 
 }
