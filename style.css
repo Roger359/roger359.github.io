@@ -12,7 +12,7 @@
 
 * {
   box-sizing: border-box;
-  font-family: "Work Sans";
+  font-family: "Work Sans", sans-serif;
   margin: 0;
   padding: 0;
 }
@@ -60,7 +60,7 @@ section h2{
 }
 
 .header-container header .logo a {
-  font-family: "Righteous";
+  font-family: "Righteous", sans-serif;
   font-size: 36px;
   color: var(--color-primary);
   text-decoration: none;
@@ -128,7 +128,7 @@ section h2{
 .start .banner-container h1 {
   margin-top: 40px;
   font-size: 42px;
-  font-family: "Righteous";
+  font-family: "Righteous", sans-serif;
 }
 
 .start .banner-container h2 {
@@ -169,7 +169,7 @@ section h2{
 
 .about h2 {
   font-size: 48px;
-  font-family: "Righteous";
+  font-family: "Righteous", sans-serif;
   text-align: center;
   padding: 20px 0;
 }
@@ -195,7 +195,7 @@ section h2{
 
 .about .row .col h3 {
   font-size: 28px;
-  font-family: "Righteous";
+  font-family: "Righteous", sans-serif;
   margin-bottom: 25px;
 }
 
@@ -294,7 +294,7 @@ section h2{
 
 .skills h2 {
   font-size: 48px;
-  font-family: "Righteous";
+  font-family: "Righteous", sans-serif;
   text-align: center;
   padding: 20px 0;
 }
@@ -347,7 +347,7 @@ section h2{
 
 .skills .row .col h3 {
   font-size: 28px;
-  font-family: "Righteous";
+  font-family: "Righteous", sans-serif;
   margin-bottom: 25px;
 }
 
@@ -479,3 +479,134 @@ section h2{
   }
 
 }
+
+/* Curriculum section */
+
+.resume{
+  background-color: var(--black);
+  color: var(--white);
+  padding: 50px 20px;
+
+}
+
+.resume .resume-container{
+  max-width: 1100px;
+  margin: auto;
+
+}
+
+.resume h2{
+  font-size: 48px;
+  font-family: "Righteous", sans-serif;
+  text-align: center;
+  padding: 20px 0;
+
+}
+
+.resume .row{
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.resume .row .col{
+  width: 49%;
+  padding: 0 20px;
+}
+
+.resume .row .col h3{
+  font-size: 28px;
+  font-family: "Righteous", sans-serif;
+  margin-bottom: 25px;
+}
+
+.resume .row .left{
+  border-right:  2px solid #252a2e;
+
+}
+.resume .row .right{
+  border-left:  2px solid #252a2e;
+
+}
+
+.resume .row .item{
+  padding: 25px;
+  margin-bottom: 30px;
+  background-color: #252a2e;
+  position: relative;
+}
+
+.resume .row .item h4{
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.resume .row .item .house{
+color: var(--color-primary);
+font-size: 22px;
+font-weight: bold;
+display: block;
+}
+
+.resume .row .item .date{
+  display: block;
+  color: var(--color-primary);
+  margin-bottom: 10px;
+}
+
+.resume .row .item p{
+  line-height: 24px;
+
+}
+
+.resume .row .left-item{
+border-right: 2px solid var(--color-primary);
+margin-right: 20px;
+}
+
+.resume .row .right-item{
+  border-left: 2px solid var(--color-primary);
+  margin-left: 20px;
+  }
+
+  .resume .row .item .left-conector{
+    height: 2px;
+    background-color: var(--color-primary);
+    width: 47px;
+    position: absolute;
+    top: 50%;
+    right: -47px;
+    z-index: 5;
+  }
+
+  .resume .row .item .left-conector .left-circle{
+    display: block;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: var(--color-primary);
+    float: right;
+    position: relative;
+    bottom: 4px;
+  }
+
+  .resume .row .item .right-conector{
+    height: 2px;
+    background-color: var(--color-primary);
+    width: 47px;
+    position: absolute;
+    top: 50%;
+    left: -47px;
+    z-index: 5;
+  }
+
+  .resume .row .item .right-conector .right-circle{
+    display: block;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: var(--color-primary);
+    float: left;
+    position: relative;
+    bottom: 4px;
+  }
