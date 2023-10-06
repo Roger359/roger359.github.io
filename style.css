@@ -385,12 +385,6 @@ html {
 }
 
 /* add the progress classes with javascript */
-.skills .skill .javascript {
-  width: 0%;
-  animation: 2s javascript forwards;
-}
-
-
 
 .skills .skill .vscode {
   width: 0%;
@@ -403,7 +397,7 @@ html {
   }
 
   100% {
-    width: 75%;
+    width: 85%;
   }
 
 }

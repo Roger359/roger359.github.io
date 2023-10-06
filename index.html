@@ -25,16 +25,16 @@
       </div>
       <nav id="nav">
         <ul>
-          <li><a href="#start">Inicio</a></li>
-          <li><a href="#about">Sobre mi</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#resume">Curriculum</a></li>
-          <li><a href="#portfolio">Portafolio</a></li>
-          <li><a href="#portfolio">Servicios</a></li>
-          <li><a href="#contact">Contacto</a></li>
+          <li><a href="#start" onclick="select()">Inicio</a></li>
+          <li><a href="#about" onclick="select()">Sobre mi</a></li>
+          <li><a href="#skills" onclick="select()">Skills</a></li>
+          <li><a href="#resume" onclick="select()">Curriculum</a></li>
+          <li><a href="#portfolio" onclick="select()">Portafolio</a></li>
+          <li><a href="#services" onclick="select()">Servicios</a></li>
+          <li><a href="#contact" onclick="select()">Contacto</a></li>
         </ul>
       </nav>
-      <div class="nav-responsive">
+      <div class="nav-responsive" onclick="showHideMenu()">
         <i class="fa-solid fa-bars"></i>
       </div>
     </header>
@@ -194,8 +194,8 @@
           <div class="skill">
             <span>VS Code</span>
             <div class="skill-bar">
-              <div class="progress">
-                <span>75%</span>
+              <div class="progress tools">
+                <span>85%</span>
               </div>
             </div>
           </div>
@@ -451,7 +451,9 @@
     </div>
   </footer>
 
+<script src="script.js">
 
+</script>
 </body>
 
 </html>
