@@ -21,6 +21,7 @@ html {
   scroll-behavior: smooth;
 }
 
+
 .web {
   text-decoration: none;
   color: var(--grey);
@@ -907,12 +908,19 @@ footer .up {
     display: block;
   }
 
+  .skills h2,
+  .resume h2,
+  .portfolio h2,
+  .services h2,
+  .contact h2,
   .about h2 {
     font-size: 30px;
+    text-align: center;
   }
 
   .about .row .col h3 {
     font-size: 18px;
+    text-align: center;
   }
 
   .about .row .col {
