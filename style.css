@@ -16,14 +16,23 @@
   padding: 0;
 }
 
+a{
+  text-decoration: none;
+}
+
 html {
   /* allows me to scroll when click menu links */
   scroll-behavior: smooth;
 }
-ul.experience li,
+ul.experience-lists li,
 ul.platforms li{
   list-style: none;
   margin: 5px 0;
+}
+
+ul.experience-lists {
+  margin-top: 10px;
+  font-size: 12px;
 }
 
 
@@ -196,7 +205,7 @@ ul.platforms li a,
 
 .about .row .col {
   width: 50%;
-  /* margin: auto; */
+  margin: 0 auto;
 }
 
 .about .row .col h3 {
@@ -219,7 +228,7 @@ ul.platforms li a,
 .about .row .col ul li strong {
   display: inline-block;
   color: var(--color-primary);
-  width: 130px;
+  width: 90px;
 }
 
 .about .row .col ul li span {
@@ -951,7 +960,6 @@ footer .up {
 
   .about .row .col {
     width: fit-content;
-    font-size: 12px;
   }
 
   .skills .row {
@@ -1004,4 +1012,13 @@ footer .up {
   }
 
 
+}
+
+@media screen and (max-width: 480px){
+  .about .row .col{
+    font-size: 12px;
+  }
+  .about .row .col ul li strong{
+    width: 70px;
+  }
 }
