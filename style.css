@@ -667,6 +667,7 @@ ul.platforms li a,
 .portfolio .gallery .project img {
   width: 100%;
   display: block;
+  border-radius: 5px;
 }
 
 .portfolio .gallery .project .overlay {
@@ -683,6 +684,7 @@ ul.platforms li a,
   font-size: 18px;
   letter-spacing: 3px;
   opacity: 0;
+  border-radius: 5px;
 }
 
 .portfolio .gallery .project .overlay h3 {
@@ -740,6 +742,7 @@ ul.platforms li a,
 .services .gallery .project img {
   width: 100%;
   display: block;
+  border-radius: 5px;
 }
 
 .services .gallery .project .overlay {
@@ -756,6 +759,7 @@ ul.platforms li a,
   font-size: 18px;
   letter-spacing: 3px;
   opacity: 0;
+  border-radius: 5px;
 }
 
 .services .gallery .project .overlay h3 {
@@ -812,9 +816,10 @@ ul.platforms li a,
   padding: 18px;
   border: none;
   margin-bottom: 20px;
-  background-color: var(--dark-grey);
-  color: var(--white);
+  background-color: var(--white);
+  color: var(--dark-grey);
   font-size: 18px;
+  border-radius: 5px;
 }
 
 .contact button {
