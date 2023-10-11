@@ -824,14 +824,6 @@ ul.platforms li a,
 
 }
 
-.contact .col #phone::placeholder {
-  text-indent: 7%;
-
-}
-
-.contact .col input#phone{
-  text-indent: 7%;
-}
 
 .iti {
   display: block !important;
@@ -842,7 +834,7 @@ ul.platforms li a,
 
 
 span.iti__country-name {
-color:var(--dark-grey);
+  color: var(--dark-grey);
 }
 
 .iti>input {
