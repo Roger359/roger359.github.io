@@ -112,7 +112,7 @@ ul.platforms li a,
   background: linear-gradient(to top,
       rgba(30, 35, 38, 0.8),
       rgba(30, 35, 38, 1)),
-    url(img/fondo.jpg);
+    url(/img/fondo.jpg);
   background-size: cover;
   height: 100vh;
   color: var(--white);
@@ -647,7 +647,7 @@ ul.platforms li a,
   font-size: 48px;
   font-family: "Righteous", sans-serif;
   text-align: center;
-  padding: 20px 0;
+  /* padding: px 0; */
 
 }
 
@@ -780,7 +780,7 @@ ul.platforms li a,
 /* Contact section  */
 
 .contact {
-  background-image: url(img/contact_bg.png);
+  background-image: url(/img/contact_bg.png);
   background-color: var(--black);
   color: var(--white);
   padding: 50px 0;
@@ -1045,6 +1045,9 @@ footer .up {
     width: 100%;
   }
 
+  .project-container {
+    margin: 15px auto;
+  }
 
 }
 
@@ -1056,4 +1059,172 @@ footer .up {
   .about .row .col ul li strong {
     width: 70px;
   }
+}
+
+/* Projects Divs  styles */
+
+.project-container {
+  max-width: 20rem;
+  background-color: white;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.project-container:hover {
+  border-color: var(--dark-grey);
+}
+
+.anchor-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.image {
+  width: 100%;
+  height: 300px;
+  /* object-fit: cover; */
+}
+
+.divTexts {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  /* border: 2px solid red; */
+}
+
+/* text-gray-900 font-semibold hover:underline */
+.anchor-title {
+  color: var(--dark-grey);
+  font-weight: 900;
+}
+
+/* text-gray-900 font-bold text-xl mb-2 line-clamp-1 */
+.portfolio .h2-title {
+  color: var(--color-primary);
+  font-weight: 900;
+  font-size: 1.25rem;
+  /* margin-bottom: 1rem; */
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+}
+
+/* text-gray-800 text-sm line-clamp-3 */
+.description {
+  color: var(--dark-grey);
+  /* font-weight: 600; */
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  font-size: 0.875rem;
+  /* 14px */
+  line-height: 1.25rem;
+  /* 20px */
+  padding: 0 1rem;
+}
+
+.demo {
+  padding: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: var(--dark-grey);
+}
+
+
+
+.portfolio .fa-github {
+  font-size: 1.3rem;
+  padding: .5rem .5rem;
+}
+
+/* Sucursal colombia page */
+
+
+
+.cpven {
+  background-color: var(--dark-grey);
+  color: var(--white);
+  padding: 50px 20px;
+
+}
+
+.cpven .cpven-container {
+  max-width: 1100px;
+  margin: 20px auto;
+
+}
+
+.cpven h2 {
+  font-size: 48px;
+  font-family: "Righteous", sans-serif;
+  text-align: center;
+  padding: 20px 0;
+
+}
+
+.cpven .gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.cpven .gallery .project {
+  position: relative;
+  /* max-width: 340px; */
+  height: fit-content;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.cpven .gallery .project img {
+  width: 100%;
+  display: block;
+  border-radius: 5px;
+}
+
+.cpven .gallery .project .overlay {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  background: linear-gradient(rgba(28, 182, 152, .8), rgba(28, 182, 152, .8));
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: 1s;
+  font-size: 18px;
+  letter-spacing: 3px;
+  opacity: 0;
+  border-radius: 5px;
+}
+
+.cpven .gallery .project .overlay h3 {
+  margin-bottom: 20px;
+  transition: 1s;
+
+}
+
+.cpven .gallery .project .overlay:hover {
+  opacity: 1;
+}
+
+.cpven .gallery .project .overlay:hover h3 {
+  margin-bottom: 0px;
 }
