@@ -3,7 +3,7 @@ export const projects = [
     title: "Lersurveyors",
     // description: "All kind of Beginner projects with JavaScript Vanilla",
     img: "./img/p1.png",
-    src: "https://lersurveyors.com/0164.netlify.app/",
+    src: "https://lersurveyors.com",
     repository: 'https://github.com/Roger359/lersurveyors'
   },
   {
