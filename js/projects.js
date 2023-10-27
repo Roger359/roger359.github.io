@@ -10,7 +10,7 @@ export const projects = [
     title: "Cpven Intranet Corporativa",
     // description: "All kind of Beginner projects with JavaScript Vanilla",
     img: "./img/cpven-home.PNG",
-    src: "/pages/cpven.html",
+    src: "./pages/cpven.html",
     // repository: 'https://github.com/Roger359/Demos/blob/master/1.Functions_App/script.js'
   },{
     title: "Demo Apps",
