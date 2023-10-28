@@ -1060,6 +1060,10 @@ footer .up {
   .about .row .col ul li strong {
     width: 70px;
   }
+
+  .start{
+    margin: 45px 0;
+  }
 }
 
 /* Projects Divs  styles */
