@@ -16,6 +16,10 @@
   padding: 0;
 }
 
+body{
+  background-color: var(--black);
+}
+
 a {
   text-decoration: none;
 }
@@ -178,7 +182,7 @@ ul.platforms li a,
 .about .about-container {
   max-width: 1100px;
   margin: auto;
-  height: 100vh;
+  /* height: 100vh; */
 }
 
 .about h2 {
@@ -201,7 +205,7 @@ ul.platforms li a,
 
 .about .row {
   display: flex;
-  margin-top: 30px;
+  /* margin-top: 30px; */
 }
 
 .about .row .col {
@@ -274,7 +278,7 @@ ul.platforms li a,
   border: 2px solid var(--white);
   width: fit-content;
   display: block;
-  margin: 40px auto;
+  margin: 20px auto;
   padding: 10px 22px;
   font-size: 16px;
   color: var(--white);
