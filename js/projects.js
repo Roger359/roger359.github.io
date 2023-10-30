@@ -72,4 +72,43 @@ export const skills = [
 		skillName: "C language",
 		icon: "fa-c",
 	},
+	{
+		skillName: "Shell",
+		icon: "fa-terminal",
+	},
+];
+
+export const hobbies = [
+	{
+		hobby: "Juegos",
+		icon: "fa-gamepad",
+	},
+	{
+		hobby: "Deporte",
+		icon: "fa-person-running",
+	},
+	{
+		hobby: "Música",
+		icon: "fa-headphones",
+	},
+	{
+		hobby: "Estoicismo",
+		icon: "fa-book",
+	},
+	{
+		hobby: "Windows",
+		icon: "fa-windows",
+	},
+	{
+		hobby: "Linux",
+		icon: "fa-linux",
+	},
+	{
+		hobby: "Agua",
+		icon: "fa-glass-water",
+	},
+	{
+		hobby: "Fotos",
+		icon: "fa-camera",
+	},
 ];
