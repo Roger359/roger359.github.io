@@ -170,5 +170,7 @@ function skillsEffects() {
 		skill[2].classList.add("git");
 		skill[3].classList.add("notion");
 		skill[4].classList.add("miro");
+		skill[5].classList.add("chatgpt");
+		skill[6].classList.add("jira");
 	}
 }

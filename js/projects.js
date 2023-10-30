@@ -8,7 +8,7 @@ export const projects = [
 	},
 	{
 		title: "Cpven Intranet Corporativa",
-		img: "./img/cpven-home.PNG",
+		img: "./img/intranet2.png",
 		src: "./pages/cpven.html",
 	},
 	{
@@ -38,6 +38,14 @@ export const tools = [
 	},
 	{
 		toolName: "Miro",
+		bar: "55%",
+	},
+	{
+		toolName: "Chat GPT",
+		bar: "60%",
+	},
+	{
+		toolName: "Jira",
 		bar: "55%",
 	},
 ];
