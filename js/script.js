@@ -1,37 +1,22 @@
-import { projects } from "./projects.js";
+import { projects, tools, skills } from "./projects.js";
 
 
-// skills bars functions 
-function skillsEffects(){
-  let skills = document.getElementById('skills');
-  let skillsDistance = window.innerHeight - skills.getBoundingClientRect().top;
-  if(skillsDistance >= 300){
-    let skill = document.getElementsByClassName('progress');
-    skill[0].classList.add('vscode');
-    skill[1].classList.add('scrum');
-    skill[2].classList.add('git');
-    skill[3].classList.add('notion');
-    skill[4].classList.add('miro');
-
-  }
-}
 
 // detect scroll to apply the animations to the skill bar
 window.onscroll = function(){
   skillsEffects();
 }
 
-// International Telephone Input
+const gridProjects = document.querySelector('.gridProjects')
+const gridTools = document.querySelector('.gridTools')
+const gridSkills = document.querySelector('.skill-container')
 
-// const input = document.querySelector("#phone");
-// window.intlTelInput(input, {
-//   utilsScript: "https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/js/utils.js",
-// });
 
-const grid = document.querySelector('.grid')
-
+// getting the projects from an array
 for (let i = 0; i < projects.length; i++){
   console.log(projects[i]);
+
+
 
   const divContainer = document.createElement("div");
   divContainer.classList.add("project-container");
@@ -94,7 +79,79 @@ for (let i = 0; i < projects.length; i++){
   divContainer.appendChild(divTexts);
   divContainer.appendChild(demoDiv);
 
-  grid.appendChild(divContainer);
+  gridProjects.appendChild(divContainer);
 
 }
 
+// getting the tools from an array
+for(let i = 0; i < tools.length; i++){
+
+  console.log(tools[i])
+
+  const divSkillContainer = document.createElement('div')
+  divSkillContainer.classList.add('skill')
+
+  const spanSkillName = document.createElement('span')
+  spanSkillName.textContent = tools[i].toolName
+
+  const skillBarDiv = document.createElement('div')
+  skillBarDiv.classList.add('skill-bar')
+
+  const progressBarDiv = document.createElement('div')
+  progressBarDiv.classList.add('progress')
+
+  const progressTextContentSpan = document.createElement('span')
+  progressTextContentSpan.textContent = tools[i].bar
+
+  progressBarDiv.appendChild(progressTextContentSpan)
+  skillBarDiv.appendChild(progressBarDiv)
+
+  divSkillContainer.appendChild(spanSkillName)
+  divSkillContainer.appendChild(skillBarDiv)
+
+  gridTools.appendChild(divSkillContainer)
+  
+}
+
+// getting the skills from an array
+for (let i = 0; i < skills.length; i++){
+  console.log(skills[i])
+ 
+
+  const divSkillContainer = document.createElement('div')
+  divSkillContainer.classList.add('skill')
+
+  const skillIcon = document.createElement('i')
+  skillIcon.classList.add('fa-brands')
+  skillIcon.classList.add(`${skills[i].icon}`)
+
+  const skillNameSpan = document.createElement('span')
+  skillNameSpan.textContent = skills[i].skillName
+
+  divSkillContainer.appendChild(skillIcon)
+  divSkillContainer.appendChild(skillNameSpan)
+
+gridSkills.appendChild(divSkillContainer)
+
+}
+
+
+{/* <div class="skill">
+<i class="fa-brands fa-html5"></i>
+<span>HTML</span>
+</div> */}
+
+// skills bars functions 
+function skillsEffects(){
+  let skills = document.getElementById('skills');
+  let skillsDistance = window.innerHeight - skills.getBoundingClientRect().top;
+  if(skillsDistance >= 300){
+    let skill = document.getElementsByClassName('progress');
+    skill[0].classList.add('vscode');
+    skill[1].classList.add('scrum');
+    skill[2].classList.add('git');
+    skill[3].classList.add('notion');
+    skill[4].classList.add('miro');
+
+  }
+}
