@@ -433,6 +433,37 @@ ul.platforms li a,
 
 }
 
+.skills .skill .chatgpt {
+  width: 0%;
+  animation: 2s chatgpt forwards;
+}
+
+@keyframes chatgpt {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 60%;
+  }
+
+}
+
+.skills .skill .jira {
+  width: 0%;
+  animation: 2s jira forwards;
+}
+
+@keyframes jira {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 55%;
+  }
+
+}
 
 .skills .skill .scrum {
   width: 0%;
@@ -445,7 +476,7 @@ ul.platforms li a,
   }
 
   100% {
-    width: 75%;
+    width: 65%;
   }
 
 }
@@ -742,13 +773,17 @@ ul.platforms li a,
   height: fit-content;
   margin: 10px;
   cursor: pointer;
+  background-color: var(--black);
+  border-radius: 5px;
 }
 
 .services .gallery .project img {
   width: 100%;
   height: 200px;
   display: block;
-  border-radius: 5px;
+  /* border-radius: 5px; */
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
 }
 
 .services .gallery .project .overlay {
@@ -1146,7 +1181,7 @@ footer .up {
 }
 
 .demo {
-  /* padding: 0.5rem; */
+  padding: 0.5rem;
   display: flex;
   justify-content: center;
   align-items: center;

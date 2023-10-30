@@ -8,7 +8,7 @@ export const projects = [
 	},
 	{
 		title: "Cpven Intranet Corporativa",
-		img: "./img/cpven-home.PNG",
+		img: "./img/intranet2.png",
 		src: "./pages/cpven.html",
 	},
 	{
@@ -38,6 +38,14 @@ export const tools = [
 	},
 	{
 		toolName: "Miro",
+		bar: "55%",
+	},
+	{
+		toolName: "Chat GPT",
+		bar: "60%",
+	},
+	{
+		toolName: "Jira",
 		bar: "55%",
 	},
 ];
@@ -71,5 +79,44 @@ export const skills = [
 	{
 		skillName: "C language",
 		icon: "fa-c",
+	},
+	{
+		skillName: "Shell",
+		icon: "fa-terminal",
+	},
+];
+
+export const hobbies = [
+	{
+		hobby: "Juegos",
+		icon: "fa-gamepad",
+	},
+	{
+		hobby: "Deporte",
+		icon: "fa-person-running",
+	},
+	{
+		hobby: "Música",
+		icon: "fa-headphones",
+	},
+	{
+		hobby: "Estoicismo",
+		icon: "fa-book",
+	},
+	{
+		hobby: "Windows",
+		icon: "fa-windows",
+	},
+	{
+		hobby: "Linux",
+		icon: "fa-linux",
+	},
+	{
+		hobby: "Agua",
+		icon: "fa-glass-water",
+	},
+	{
+		hobby: "Fotos",
+		icon: "fa-camera",
 	},
 ];
