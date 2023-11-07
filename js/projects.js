@@ -41,13 +41,9 @@ export const tools = [
 		bar: "55%",
 	},
 	{
-		toolName: "Chat GPT",
-		bar: "60%",
-	},
-	{
 		toolName: "Jira",
 		bar: "55%",
-	},
+	}
 ];
 
 export const skills = [
