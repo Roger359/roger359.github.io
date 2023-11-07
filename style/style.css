@@ -433,7 +433,7 @@ ul.platforms li a,
 
 }
 
-.skills .skill .chatgpt {
+/* .skills .skill .chatgpt {
   width: 0%;
   animation: 2s chatgpt forwards;
 }
@@ -447,7 +447,7 @@ ul.platforms li a,
     width: 60%;
   }
 
-}
+} */
 
 .skills .skill .jira {
   width: 0%;
