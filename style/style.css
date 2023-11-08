@@ -1286,7 +1286,7 @@ footer .up {
 }
 
 /* Dark Toggle Button  */
-span.toggle-darkmode{
+/* span.toggle-darkmode{
   position: absolute;
   top: 1.5rem;
   right: 2rem;
@@ -1310,4 +1310,4 @@ span.toggle-darkmode{
   color: white;
   margin-left: 10px;
   font-size: 1rem;
-}
+} */
