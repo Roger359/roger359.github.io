@@ -447,21 +447,6 @@ ul.platforms li a,
 
 }
 
-/* .skills .skill .chatgpt {
-  width: 0%;
-  animation: 2s chatgpt forwards;
-}
-
-@keyframes chatgpt {
-  0% {
-    width: 0%;
-  }
-
-  100% {
-    width: 60%;
-  }
-
-} */
 
 .skills .skill .jira {
   width: 0%;
@@ -1013,6 +998,19 @@ footer .up {
     border-bottom: 1px solid var(--white);
     padding: 10px 0;
   }
+
+  span.toggle-darkmode{
+    margin-right: 25px;
+  
+  }
+}
+
+@media screen and (min-width: 980px) and (max-width: 1300px){
+
+  span.toggle-darkmode{
+    display:none !important;
+  
+  }
 }
 
 @media screen and (max-width: 700px) {
@@ -1103,6 +1101,11 @@ footer .up {
     margin: 15px auto;
   }
 
+  span.toggle-darkmode{
+    margin-right: 25px;
+  
+  }
+
 }
 
 @media screen and (max-width: 480px) {
@@ -1116,6 +1119,11 @@ footer .up {
 
   .start{
     margin: 45px 0;
+  }
+
+  span.toggle-darkmode{
+    margin-right: 25px;
+  
   }
 }
 
@@ -1286,7 +1294,7 @@ footer .up {
 }
 
 /* Dark Toggle Button  */
-/* span.toggle-darkmode{
+span.toggle-darkmode{
   position: absolute;
   top: 1.5rem;
   right: 2rem;
@@ -1310,4 +1318,4 @@ footer .up {
   color: white;
   margin-left: 10px;
   font-size: 1rem;
-} */
+}

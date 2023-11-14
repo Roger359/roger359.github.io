@@ -1,40 +1,40 @@
 import { projects, tools, skills, hobbies } from "./projects.js";
 
-// const toggleDarkMode = document.querySelector(".toggle-darkmode");
-// const toggleText = document.querySelector(".toggle-text");
+const toggleDarkMode = document.querySelector(".toggle-darkmode");
+const toggleText = document.querySelector(".toggle-text");
 
-// let lightMode = localStorage.getItem("lightMode");
+let lightMode = localStorage.getItem("lightMode");
 
 // set lightMode
-// const enableLightMode = () => {
-//   document.body.classList.add("lightmode");
-//   toggleText.textContent = "Dark";
-//   localStorage.setItem("lightMode", "enabled");
-// };
+const enableLightMode = () => {
+  document.body.classList.add("lightmode");
+  toggleText.textContent = "Dark";
+  localStorage.setItem("lightMode", "enabled");
+};
 
 // Disable light Mode
-// const disableLightMode = () => {
-//   document.body.classList.remove("lightmode");
-//   toggleText.textContent = "Light";
-//   localStorage.setItem("lightMode", null);
-// };
+const disableLightMode = () => {
+  document.body.classList.remove("lightmode");
+  toggleText.textContent = "Light";
+  localStorage.setItem("lightMode", null);
+};
 
 // Save darkmode history
-// if (lightMode === "enabled") {
-//   enableLightMode();
-// }
+if (lightMode === "enabled") {
+  enableLightMode();
+}
 
 // Add event listener
 
-// toggleDarkMode.addEventListener("click", () => {
-//   let lightMode = localStorage.getItem("lightMode");
+toggleDarkMode.addEventListener("click", () => {
+  let lightMode = localStorage.getItem("lightMode");
 
-//   if(lightMode !== 'enabled'){
-//     enableLightMode();
-//   }else{
-//     disableLightMode();
-//   }
-// });
+  if(lightMode !== 'enabled'){
+    enableLightMode();
+  }else{
+    disableLightMode();
+  }
+});
 
 // detect scroll to apply the animations to the skill bar
 window.onscroll = function () {
