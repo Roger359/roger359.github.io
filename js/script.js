@@ -2,26 +2,35 @@ import { projects, tools, skills, hobbies } from "./projects.js";
 
 const toggleDarkMode = document.querySelector(".toggle-darkmode");
 const toggleText = document.querySelector(".toggle-text");
+const sections = document.querySelectorAll('section');
 
 let lightMode = localStorage.getItem("lightMode");
 
 // set lightMode
 const enableLightMode = () => {
-  document.body.classList.add("lightmode");
+	for(let i = 0; i < sections.length; i++){
+
+		sections[i].classList.add('lightMode')
+	}
+	
   toggleText.textContent = "Dark";
   localStorage.setItem("lightMode", "enabled");
 };
 
 // Disable light Mode
 const disableLightMode = () => {
-  document.body.classList.remove("lightmode");
+	for(let i = 0; i < sections.length; i++){
+
+		sections[i].classList.remove('lightMode')
+	}
+	
   toggleText.textContent = "Light";
   localStorage.setItem("lightMode", null);
 };
 
 // Save darkmode history
-if (lightMode === "enabled") {
-  enableLightMode();
+if (lightMode === null) {
+  disableLightMode();
 }
 
 // Add event listener
@@ -114,7 +123,6 @@ for (let i = 0; i < projects.length; i++) {
 
 // getting the tools from an array
 for (let i = 0; i < tools.length; i++) {
-	console.log(tools[i]);
 
 	const divSkillContainer = document.createElement("div");
 	divSkillContainer.classList.add("skill");
