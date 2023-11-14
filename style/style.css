@@ -9,18 +9,20 @@
   --dark-grey: #252a2e;
 
   --background: var(--black);
-  --background-dark-grey: #252a2e;
-
+  --background-dark-grey: var(--dark-grey);
+  --foreground: var(--white)
 }
 
 
 .lightMode {
-  --color-light: #eee;
-  --color-dark: #222831;
+  --color-light: #dce1f2;
+  --color-black: #1e2326;
   --color-primary: #03875b;
+  --dark-grey: #252a2e;
 
   --background: var(--color-light);
-  --foreground: var(--color-light);
+  --background-dark-grey: var(--color-light);
+  --foreground: var(--color-black);
 }
 
 * {
@@ -65,12 +67,7 @@ ul.platforms li a,
 
 }
 
-
-
-
 /* Menu */
-
-
 
 .header-container {
   background-color: var(--background);
@@ -133,18 +130,19 @@ ul.platforms li a,
     url(/img/fondo.jpg);
   background-size: cover;
   height: 100vh;
-  color: var(--white);
+  color: var(--foreground);
   display: flex;
   align-items: center;
 }
 
 .start .banner-container {
   padding: 20px;
-  background-color: var(--black);
+  background-color: var(--background);
   max-width: 350px;
   margin: auto;
   text-align: center;
   border-radius: 40px;
+  margin-top: 115px;
 }
 
 .start .banner-container img {
@@ -169,10 +167,10 @@ ul.platforms li a,
 }
 
 .start .banner-container .social-media a {
-  color: var(--white);
+  color: var(--foreground);
   display: inline-block;
   text-decoration: none;
-  border: 1px solid var(--white);
+  border: 1px solid var(--foreground);
   border-radius: 100%;
   width: 42px;
   height: 42px;
@@ -188,8 +186,8 @@ ul.platforms li a,
 
 /* About */
 .about {
-  background-color: var(--black);
-  color: var(--white);
+  background-color: var(--background);
+  color: var(--foreground);
   padding: 50px 20px;
 }
 
@@ -265,9 +263,9 @@ ul.platforms li a,
 .about .row .col .hobbies-container .hobbies {
   flex: 25%;
   max-width: 25%;
-  /* width: 100px; */
   height: 100px;
-  background-color: #252a2e;
+  background-color: var(--background);
+  color: var(--foreground);
   border-radius: 10px;
   margin: 0 15px 15px 0;
   display: flex;
@@ -289,13 +287,12 @@ ul.platforms li a,
 .about button {
   cursor: pointer;
   background-color: transparent;
-  border: 2px solid var(--white);
   width: fit-content;
   display: block;
   margin: 20px auto;
   padding: 10px 22px;
   font-size: 16px;
-  color: var(--white);
+  color: var(--foreground);
   position: relative;
   z-index: 10;
 
@@ -320,8 +317,8 @@ ul.platforms li a,
 /* Skills Section  */
 
 .skills {
-  background-color: #252a2e;
-  color: var(--white);
+  background-color: var(--background);
+  color: var(--foreground);
   padding: 50px 20px;
 }
 
@@ -351,7 +348,7 @@ ul.platforms li a,
 .skills .row .col .skill-container .skill {
   width: 100px;
   height: 100px;
-  background-color: #252a2e;
+  background-color: var(--background);
   border-radius: 10px;
   margin: 0 15px 15px 0;
   display: flex;
@@ -531,8 +528,8 @@ ul.platforms li a,
 /* Curriculum section */
 
 .resume {
-  background-color: var(--black);
-  color: var(--white);
+  background-color: var(--background);
+  color: var(--foreground);
   padding: 50px 20px;
 
 }
@@ -569,19 +566,19 @@ ul.platforms li a,
 }
 
 .resume .row .left {
-  border-right: 2px solid #252a2e;
+  border-right: 2px solid var(--background-dark-grey);
 
 }
 
 .resume .row .right {
-  border-left: 2px solid #252a2e;
+  border-left: 2px solid var(--background-dark-grey);
 
 }
 
 .resume .row .item {
   padding: 25px;
   margin-bottom: 30px;
-  background-color: var(--dark-grey);
+  background-color: var(--background);
   position: relative;
 }
 
@@ -665,8 +662,8 @@ ul.platforms li a,
 
 
 .portfolio {
-  background-color: var(--dark-grey);
-  color: var(--white);
+  background-color: var(--background-dark-grey);
+  color: var(--foreground);
   padding: 50px 20px;
 
 }
@@ -705,43 +702,12 @@ ul.platforms li a,
   border-radius: 5px;
 }
 
-.portfolio .gallery .project .overlay {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  background: linear-gradient(rgba(28, 182, 152, .8), rgba(28, 182, 152, .8));
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  transition: 1s;
-  font-size: 18px;
-  letter-spacing: 3px;
-  opacity: 0;
-  border-radius: 5px;
-}
-
-.portfolio .gallery .project .overlay h3 {
-  margin-bottom: 20px;
-  transition: 1s;
-
-}
-
-.portfolio .gallery .project .overlay:hover {
-  opacity: 1;
-}
-
-.portfolio .gallery .project .overlay:hover h3 {
-  margin-bottom: 0px;
-}
-
 /* services styles */
 
 
 .services {
-  background-color: var(--dark-grey);
-  color: var(--white);
+  background-color: var(--background-dark-grey);
+  color: var(--foreground);
   padding: 50px 20px;
 
 }
