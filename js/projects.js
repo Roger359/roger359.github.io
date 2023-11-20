@@ -12,6 +12,11 @@ export const projects = [
 		src: "./pages/cpven.html",
 	},
 	{
+		title: "Cement Stress Check",
+		img: "./img/csia1.png",
+		src: "./pages/csia.html",
+	},
+	{
 		title: "Demo Apps",
 		img: "./img/p3.png",
 		src: "https://quiet-dolphin-a10164.netlify.app/",
