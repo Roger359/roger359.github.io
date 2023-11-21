@@ -121,36 +121,8 @@ for (let i = 0; i < projects.length; i++) {
 	gridProjects.appendChild(divContainer);
 }
 
-// getting the tools from an array
-for (let i = 0; i < tools.length; i++) {
-
-	const divSkillContainer = document.createElement("div");
-	divSkillContainer.classList.add("skill");
-
-	const spanSkillName = document.createElement("span");
-	spanSkillName.textContent = tools[i].toolName;
-
-	const skillBarDiv = document.createElement("div");
-	skillBarDiv.classList.add("skill-bar");
-
-	const progressBarDiv = document.createElement("div");
-	progressBarDiv.classList.add("progress");
-
-	const progressTextContentSpan = document.createElement("span");
-	progressTextContentSpan.textContent = tools[i].bar;
-
-	progressBarDiv.appendChild(progressTextContentSpan);
-	skillBarDiv.appendChild(progressBarDiv);
-
-	divSkillContainer.appendChild(spanSkillName);
-	divSkillContainer.appendChild(skillBarDiv);
-
-	gridTools.appendChild(divSkillContainer);
-}
-
 // getting the skills from an array
 for (let i = 0; i < skills.length; i++) {
-	console.log(skills[i]);
 
 	const divSkillContainer = document.createElement("div");
 	divSkillContainer.classList.add("skill");
@@ -203,18 +175,3 @@ for (let i = 0; i < hobbies.length; i++) {
 </div> */
 }
 
-// skills bars functions
-function skillsEffects() {
-	let skills = document.getElementById("skills");
-	let skillsDistance = window.innerHeight - skills.getBoundingClientRect().top;
-	if (skillsDistance >= 300) {
-		let skill = document.getElementsByClassName("progress");
-		skill[0].classList.add("vscode");
-		skill[1].classList.add("scrum");
-		skill[2].classList.add("git");
-		skill[3].classList.add("notion");
-		skill[4].classList.add("miro");
-		// skill[5].classList.add("chatgpt");
-		skill[5].classList.add("jira");
-	}
-}

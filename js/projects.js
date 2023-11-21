@@ -33,10 +33,7 @@ export const tools = [
 		toolName: "Scrum",
 		bar: "65%",
 	},
-	{
-		toolName: "Git",
-		bar: "65%",
-	},
+	
 	{
 		toolName: "Notion",
 		bar: "85%",
@@ -45,10 +42,7 @@ export const tools = [
 		toolName: "Miro",
 		bar: "55%",
 	},
-	{
-		toolName: "Jira",
-		bar: "55%",
-	}
+	
 ];
 
 export const skills = [
@@ -69,6 +63,10 @@ export const skills = [
 		icon: "fa-bootstrap",
 	},
 	{
+		skillName: "Git",
+		icon: "fa-git-alt",
+	},
+	{
 		skillName: "SharePoint",
 		icon: "fa-windows",
 	},
@@ -84,6 +82,10 @@ export const skills = [
 	{
 		skillName: "Shell",
 		icon: "fa-terminal",
+	},
+	{
+		skillName: "Jira",
+		icon: "fa-jira",
 	},
 ];
 
@@ -112,12 +114,5 @@ export const hobbies = [
 		hobby: "Linux",
 		icon: "fa-linux",
 	},
-	{
-		hobby: "Agua",
-		icon: "fa-glass-water",
-	},
-	{
-		hobby: "Fotos",
-		icon: "fa-camera",
-	},
+
 ];

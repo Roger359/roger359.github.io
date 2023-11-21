@@ -186,7 +186,7 @@ ul.platforms li a,
 
 /* About */
 .about {
-  background-color: var(--background);
+  background-color: var(--background-dark-grey);
   color: var(--foreground);
   padding: 50px 20px;
 }
@@ -348,7 +348,7 @@ ul.platforms li a,
 .skills .row .col .skill-container .skill {
   width: 100px;
   height: 100px;
-  background-color: var(--background);
+  background-color: var(--background-);
   border-radius: 10px;
   margin: 0 15px 15px 0;
   display: flex;
@@ -376,7 +376,7 @@ ul.platforms li a,
 }
 
 .skills .row .col {
-  width: 50%;
+  width: 100%;
   padding: 0 20px;
 }
 
